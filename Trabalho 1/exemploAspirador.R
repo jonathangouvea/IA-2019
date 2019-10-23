@@ -1,11 +1,11 @@
-debugSource("Canibais.R")
+debugSource("Aspirador.R")
 debugSource("buscaDesinformada.R")
 debugSource("buscaInformada.R")
 
-inicial <- Canibais(desc = c(M = 3, C = 3, B = 1))
+inicial <- Aspirador(desc = c(2, 0, 1, 1, 1))
 
-objetivo <- Canibais()
-objetivo$desc <- c(M = 0, C = 0, B = 0)
+objetivo <- Aspirador()
+objetivo$desc <- c(2, 0, 0, 0, 0)
 
 cat("====\tBusca em Largura\t====\n")
 print(unlist(buscaEmLargura(inicial, objetivo)))
